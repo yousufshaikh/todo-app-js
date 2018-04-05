@@ -10,11 +10,11 @@ for (var i = 0; i < tagList.length; i++) {
 	// create close tag ends
 
 	// create edit tag
-	// var newSpan = document.createElement("span");
-	// var pencil = document.createTextNode("\uD83D\uDD89");
-	// newSpan.appendChild(pencil);
-	// newSpan.className = "pull-right pencil";
-	// tagList[i].appendChild(newSpan);
+	var newSpan = document.createElement("span");
+	var pencil = document.createTextNode("\uD83D\uDD89");
+	newSpan.appendChild(pencil);
+	newSpan.className = "pull-right pencil";
+	tagList[i].appendChild(newSpan);
 	// create edit tag ends
 
 }
@@ -30,22 +30,15 @@ for (var i = 0; i < close.length; i++) {
 
 //click a pencil button to make input tag in it
 var pencil = document.getElementsByClassName("pencil");
-for (var i = 0; i < pencil.length; i++) {
-	pencil[i].onclick = function() {
-		var x = this.parentElement;
-		var t = x.firstChild;
-		var u = document.createElement("input");
-		var tt = x.innerHTML = u;
-		var mn = tt.value = t;
-		console.log(t);
-		console.log(u);
-		console.log(tt);
-		console.log(mn);
-		console.log(x);
-		// var v = u.value = t;
+for(var i = 0; i < pencil.length; i++){
+	pencil[i].onclick = function(){
+		var div = this.parentElement;
+		var textOfFirstChild = div.firstChild.textContent;
+		var createInputTag = document.createElement('input');
+		var b = createInputTag.value = textOfFirstChild;
+		console.log(b);
 	}
 }
-
 
 // click to apply checked class means strike
 var list =document.querySelector('ul');
