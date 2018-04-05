@@ -63,11 +63,19 @@ function btnAddItem(){
 		document.getElementById("unorderList").appendChild(createList);
 	}
 
-	 var span = document.createElement("SPAN");
+	var span = document.createElement("SPAN");
   	var txt = document.createTextNode("\u00D7");
   	span.className = "close";
   	span.appendChild(txt);
   	createList.appendChild(span);
+
+  	// create edit tag
+	var newSpan = document.createElement("span");
+	var pencil = document.createTextNode("\uD83D\uDD89");
+	newSpan.appendChild(pencil);
+	newSpan.className = "pull-right pencil";
+	createList.appendChild(newSpan);
+	// create edit tag ends
 
   	var close = document.getElementsByClassName("close");
 	for (var i = 0; i < close.length; i++) {
