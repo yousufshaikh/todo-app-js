@@ -10,11 +10,11 @@ for (var i = 0; i < tagList.length; i++) {
 	// create close tag ends
 
 	// create edit tag
-	var newSpan = document.createElement("span");
-	var pencil = document.createTextNode("\uD83D\uDD89");
-	newSpan.appendChild(pencil);
-	newSpan.className = "pull-right pencil";
-	tagList[i].appendChild(newSpan);
+	// var newSpan = document.createElement("span");
+	// var pencil = document.createTextNode("\uD83D\uDD89");
+	// newSpan.appendChild(pencil);
+	// newSpan.className = "pull-right pencil";
+	// tagList[i].appendChild(newSpan);
 	// create edit tag ends
 
 }
@@ -70,11 +70,11 @@ function btnAddItem(){
   	createList.appendChild(span);
 
   	// create edit tag
-	var newSpan = document.createElement("span");
-	var pencil = document.createTextNode("\uD83D\uDD89");
-	newSpan.appendChild(pencil);
-	newSpan.className = "pull-right pencil";
-	createList.appendChild(newSpan);
+	// var newSpan = document.createElement("span");
+	// var pencil = document.createTextNode("\uD83D\uDD89");
+	// newSpan.appendChild(pencil);
+	// newSpan.className = "pull-right pencil";
+	// createList.appendChild(newSpan);
 	// create edit tag ends
 
   	var close = document.getElementsByClassName("close");
